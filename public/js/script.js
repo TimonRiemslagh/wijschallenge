@@ -1,6 +1,5 @@
 $(document).ready(function() {
     var modal = $('.modalWrapper');
-    modal.hide();
 
     $('.leesmeer').on('click', function(e) {
         e.preventDefault();
