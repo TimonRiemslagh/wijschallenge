@@ -1,0 +1,12 @@
+{
+  "name": "wijschallenge",
+  "version": "1.0.0",
+  "description": "crazy cool challenge",
+  "author": "timon",
+  "dependencies": {
+    "express": "4.*"
+  },
+  "engines": {
+    "node": "4.4.1"
+  }
+}
