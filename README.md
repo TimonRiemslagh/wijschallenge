@@ -12,4 +12,5 @@ Meer informatie over de opdracht vind je op https://css-tricks.com/print-magazin
 Oplossing:
 
 gehost op: https://wijschallenge.herokuapp.com/
+
 gemaakt door: https://be.linkedin.com/in/timon-riemslagh-426312a2
