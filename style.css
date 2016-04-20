@@ -1,0 +1,334 @@
+@media (min-width:150px) {
+    article.main h1 {
+        font-size: 25px;
+        margin: 10px 0 10px 0;
+    }
+
+    section.footnote h1 {
+        width: 44px;
+    }
+
+    section.footnote div.line {
+        margin-bottom: -12px;
+    }
+
+    article.main div.inner {
+        margin: 0 30px;
+    }
+
+    .main figure img {
+        width: 95%;
+        padding-right: 5%;
+    }
+
+    article.main figure figcaption {
+        margin-left: 30px;
+    }
+
+    article.side .inner {
+        margin: 0 30px;
+    }
+
+    article.side header img {
+        width: 70px;
+    }
+
+}
+@media (min-width:320px) {
+
+
+}
+@media (min-width:481px) {
+
+
+
+    .flex-container
+    {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 2em;
+    }
+
+    .flex-container h1
+    {
+        /* flexbox stuff */
+        -webkit-column-span: all;
+    }
+
+
+
+}
+@media (min-width:641px) {
+
+    article.side header img {
+        width: 50px;
+    }
+
+    article.side {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 33%;
+    }
+
+    article.main {
+        width: 66%;
+        margin: 0;
+    }
+
+    article.main h1 {
+        font-size: 35px;
+        margin: 30px 0 20px 0;
+    }
+
+    section.footnote div.line {
+        margin-bottom: -17px;
+    }
+
+    section.footnote h1 {
+        width: 62px;
+    }
+
+}
+@media (min-width:961px) {
+
+    article.side header img {
+        width: 70px;
+    }
+
+}
+@media (min-width:1025px) {
+
+    .flex-container
+    {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 3em;
+    }
+
+}
+@media (min-width:1281px) {
+
+    article.side .inner {
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+
+    article.main figure figcaption {
+        margin: 0;
+
+    }
+
+    article.main div.inner {
+        padding: 0;
+        margin: 0;
+    }
+
+    article.side {
+        width: 20%;
+    }
+
+
+
+    article.main {
+        width: 60%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .main figure img {
+        width: 100%;
+    }
+
+}
+
+* {
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 11px solid black;
+    float: left;
+    margin-right: 5px;
+}
+
+/* MAIN */
+
+
+
+article.main p.intro {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+article.main p.source {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
+.main figure {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main figure img {
+    margin-bottom: 10px;
+}
+
+.main figure figcaption {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+section.footnote {
+    margin-bottom: 30px;
+}
+
+section.footnote h1 {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 0 15px;
+}
+
+section.footnote div.line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+
+}
+
+article.side {
+    background-color: rgba(218,112,214,0.2);
+    min-height: 100%;
+}
+
+article.side .inner {
+    padding-top: 30px;
+}
+
+article.side img {
+    float: right;
+    margin-left: 10px;
+}
+
+article.side header h1 {
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-size: 20px;
+    width: 91px;
+    margin-bottom: 10px;
+}
+
+article.side header p.headernote {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+article.side header p.headernote span {
+    font-style: italic;
+}
+
+article.side section {
+    padding-bottom: 30px;
+}
+
+article.side section h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* source: http://nicolasgallagher.com/micro-clearfix-hack/; */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body, html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
