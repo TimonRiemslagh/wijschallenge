@@ -45,13 +45,18 @@
 
     .flex-container
     {
+        -moz-column-count: 2;
         -webkit-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 2em;
         -webkit-column-gap: 2em;
+        column-gap: 2em;
     }
 
     .flex-container h1
     {
         -webkit-column-span: all;
+        column-span: all;
     }
 
 }
@@ -105,8 +110,12 @@
 
     .flex-container
     {
+        -moz-column-count: 2;
         -webkit-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 3em;
         -webkit-column-gap: 3em;
+        column-gap: 3em;
     }
 
 }
@@ -150,10 +159,10 @@
 
 * {
     font-family: sans-serif;
+    line-height: 1.3;
 }
 
 body {
-    position: relative;
 }
 
 p {
@@ -241,7 +250,7 @@ article.side header h1 {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     font-size: 20px;
-    width: 91px;
+    width: 97px;
     margin-bottom: 10px;
 }
 
@@ -359,7 +368,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
